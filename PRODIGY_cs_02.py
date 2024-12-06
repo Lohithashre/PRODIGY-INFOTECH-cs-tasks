@@ -10,7 +10,7 @@ class ImageEncryptionTool:
     def encrypt_image(self, image_path, key):
         """Encrypts the image with a key."""
         try:
-            # Open the image file
+            
             original_image = Image.open(image_path)
         except FileNotFoundError:
             print(f"Oops, we couldn't find the image at {image_path}. Please check the path.")
